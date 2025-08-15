@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_intro/hello_world/hello_world_screen.dart';
 
 void main() {
   runApp(FlutterIntroApp());
@@ -10,21 +11,21 @@ class FlutterIntroApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Título AppBar'),
-        ),
-        body: Center(
-          child: Text(
-            'Primeiro Text',
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              color: Colors.blue,
-            ),
+      title: 'Flutter Introdução',
+      theme: ThemeData(
+        textTheme: TextTheme(
+          bodySmall: TextStyle(
+            color: Colors.red,
+          ),
+          bodyLarge: TextStyle(
+            color: Colors.red,
+          ),
+          bodyMedium: TextStyle(
+            color: Colors.red,
           ),
         ),
       ),
+      home: HelloWorldScreen(),
     );
   }
 }
