@@ -10,13 +10,17 @@ class HelloWorldScreen extends StatelessWidget {
         title: Text('Título AppBar'),
       ),
       body: Center(
-        child: Text(
-          'Primeiro Text',
-          //style: TextStyle(
-          //   fontSize: 24,
-          //    fontWeight: FontWeight.bold,
-          //    color: Colors.blue,
-          //  ),
+        child: ElevatedButton(
+          onPressed: () {},
+          child: Text(
+            'Primeiro Text',
+            style: TextStyle(
+              fontSize: 32,
+              fontWeight: FontWeight.bold,
+              //    color: Colors.blue,
+              //  ),
+            ),
+          ),
         ),
       ),
     );

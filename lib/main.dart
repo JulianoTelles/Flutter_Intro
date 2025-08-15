@@ -13,17 +13,7 @@ class FlutterIntroApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Introdução',
       theme: ThemeData(
-        textTheme: TextTheme(
-          bodySmall: TextStyle(
-            color: Colors.red,
-          ),
-          bodyLarge: TextStyle(
-            color: Colors.red,
-          ),
-          bodyMedium: TextStyle(
-            color: Colors.red,
-          ),
-        ),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.grey),
       ),
       home: HelloWorldScreen(),
     );
